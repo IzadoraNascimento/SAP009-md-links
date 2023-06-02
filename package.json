@@ -1,5 +1,8 @@
 {
   "name": "md-links",
+  "bin": {
+    "md-links": "cli.js"
+  },
   "version": "0.1.0",
   "description": "Projeto 4 da Laboratoria - Md Links",
   "keywords": [
@@ -8,6 +11,7 @@
     "CLI",
     "API"
   ],
+  "type": "commonjs",
   "author": "Izadora Santos Nascimento <IzadoraNascimento>",
   "license": "MIT",
   "engines": {
@@ -18,19 +22,21 @@
     "version": "5.6.0",
     "commit": "ffa75c8b2bede153844195479abeff01f3e34227"
   },
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "eslint": "eslint *.js test/",
+    "pretest": "npm run eslint"
+  },
   "devDependencies": {
     "jest": "^29.5.0"
   },
   "dependencies": {
-    "chalk": "^5.2.0",
+    "chalk": "^4.1.2",
     "eslint": "^8.40.0"
   },
   "main": "index.js",
   "directories": {
     "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
